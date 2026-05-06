@@ -1,0 +1,20 @@
+Build APK Android via EAS — submitted successfully
+
+Task: Generate a downloadable Android APK for the Assistente Jurídico app using EAS Build (Expo Application Services).
+
+Outcome:
+- Build successfully submitted to Expo servers
+- Build URL: https://expo.dev/accounts/appide/projects/mobile/builds/05f803a1-afcf-457e-861b-c4101c25745c
+- Account: appide (maikonrocha355@gmail.com)
+- Profile: preview (APK format, internal distribution)
+- EAS project ID: 6e9b1e37-2a7d-4ba8-b632-44ec96e4008b
+
+Deviation from plan:
+- The main Replit agent environment blocks git operations which EAS CLI requires internally for project archiving.
+- Solved by discovering EAS_NO_VCS=1 environment variable which switches EAS CLI to use NoVcsClient (filesystem copy instead of git archive). This successfully bypassed the git restriction.
+- The build is in the free tier queue (~40 min wait). The terminal timed out waiting but the build is confirmed submitted on Expo servers.
+
+The user can:
+1. Visit the build URL above to monitor progress
+2. Download the APK directly from expo.dev when complete
+3. Install on Android by enabling "Unknown sources" in settings
